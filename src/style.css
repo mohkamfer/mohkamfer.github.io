@@ -48,7 +48,6 @@ body {
     height: 45px;
     filter: invert(1);
     margin: 0 auto;
-    margin-bottom: calc(4.5rem + 16 * (100vw - 320px) / (400 - 2));
     padding: 5px;
     cursor: pointer;
     transition: filter 200ms ease;
@@ -279,11 +278,15 @@ body {
 
 @media (min-width: 481px) and (max-width: 1024px) {
     #name {
-        font-size: 12vw;
+        font-size: 7vw;
     }
     
     #typer-container {
-        font-size: 4vw;
+        font-size: 3vw;
+    }
+    
+    #arrow {
+        margin-bottom: 90px;
     }
     
     #nav {
@@ -322,6 +325,10 @@ body {
     
     #typer-container {
         font-size: 6vw;
+    }
+    
+    #arrow {
+        margin-bottom: 50%;
     }
     
     #nav {
