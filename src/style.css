@@ -20,7 +20,7 @@ body {
     font-family: sans;
     display: inline-block;
     margin: 15px 30px;
-    padding: 8px;
+    padding: 12px;
     cursor: pointer;
     text-shadow: 0 0 25px #123;
     background-color: rgba(0, 0, 0, 0);
@@ -117,6 +117,7 @@ body {
     width: 100%;
     transition: box-shadow 500ms ease;
     font-family: 'Nova Flat', cursive;
+    z-index: 5;
 }
 
 #nav .ul {
@@ -175,25 +176,52 @@ body {
     width: 25px !important;
 }
 
-.compensate-nav {
-    margin-bottom: 90px;
-}
-
-#java-section,
-#android-section,
-#web-section,
-#contact-section {
-    height: 400px;
+.main-section {
+    padding: 50px;
     display: flex;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#java-section h1,
-#android-section h1,
-#web-section h1,
-#contact-section h1 {
-    margin: auto auto;
+.main-section h1 {
     font-family: 'Cabin', sans-serif;
+    margin: 70px;
+}
+
+.main-section {
+    font-family: monospace;
+}
+
+.main-section .card {
+    margin: 20px;
+    background-color: #ffffdc;
+    color: black;
+    padding: 40px;
+    box-shadow: 0px 0px 55px #333;
+    transform: translateY(2px);
+    border-radius: 8px;
+    transition: padding 200ms ease, box-shadow 400ms ease, transform 200ms ease 100ms;
+    max-width: 768px;
+}
+
+.main-section .card > *:not(h2) {
+    margin-left: 15px;
+}
+
+.main-section .card h2 {
+    margin-bottom: 40px;
+    font-family: sans;
+}
+
+.main-section .card ul {
+    transition: padding-left 400ms ease;
+}
+
+.main-section .card:hover {
+    box-shadow: 0px 0px 15px #333;
+    transform: translateY(0px);
 }
 
 #java-section {
@@ -209,7 +237,7 @@ body {
 }
 
 #contact-section {
-    background: linear-gradient(to bottom, #123 20%,#abc 100%);
+    background: linear-gradient(to bottom, #123 20%,#321 100%);
 }
 
 #copyrights-section {
@@ -217,7 +245,7 @@ body {
     color: white;
     text-align: center;
     padding: 25px;
-    font-family: sans;
+    font-family: 'Cabin', sans-serif;
 }
 
 /* 
@@ -254,8 +282,12 @@ body {
         font-size: 4vw;
     }
     
-    #nav ul {
-        flex-direction: column;
+    #nav {
+        top: calc(100% - 160px);
+    }
+    
+    #nav .ul .li {
+        padding: 40px;
     }
     
     #nav .ul .li img {
@@ -266,8 +298,8 @@ body {
         font-size: 10px;
     }
     
-    #cover {
-        margin-bottom: 142px;
+    .main-section .card ul {
+        padding-left: 5px;
     }
 }
 
@@ -284,13 +316,16 @@ body {
         font-size: 6vw;
     }
     
+    #nav {
+        top: calc(100% - 90px);
+    }
+    
     #nav .ul .li {
         padding: 10px;
     }
     
     #nav .ul .li img {
         width: 30px !important;
-        margin-bottom: 20px;
     }
     
     #nav p {
@@ -298,7 +333,16 @@ body {
     }
     
     #cover {
+        height: calc(100% - 90px);
         margin-bottom: 90px;
         background: #321;
+    }
+    
+    .main-section .card {
+        padding: 20px;
+    }
+    
+    .main-section .card ul {
+        padding-left: 0;
     }
 }
