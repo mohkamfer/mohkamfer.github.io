@@ -26,6 +26,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     border-radius: 25px;
     transition: text-shadow 200ms ease, background-color 200ms ease;
+    outline: none;
+    border: none;
 }
 
 #cover-reach-me:hover {
