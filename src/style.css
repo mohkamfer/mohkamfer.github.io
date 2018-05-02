@@ -183,15 +183,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: monospace;
 }
 
 .main-section h1 {
     font-family: 'Cabin', sans-serif;
     margin: 70px;
-}
-
-.main-section {
-    font-family: monospace;
 }
 
 .main-section .card {
@@ -347,6 +344,10 @@ body {
         background: #321;
     }
     
+    .main-section {
+        padding: 10px;
+    }
+    
     .main-section h1 {
         margin: 30px 0;
     }
@@ -356,7 +357,7 @@ body {
     }
     
     .main-section .card ul {
-        padding-left: 0;
+        padding-left: 15px;
     }
 
     #to-top {
