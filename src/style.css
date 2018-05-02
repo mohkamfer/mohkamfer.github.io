@@ -298,6 +298,10 @@ body {
         font-size: 10px;
     }
     
+    .main-section h1 {
+        margin: 40px;
+    }
+    
     .main-section .card ul {
         padding-left: 5px;
     }
@@ -320,12 +324,17 @@ body {
         top: calc(100% - 90px);
     }
     
+    #nav .ul {
+        height: 90px;
+    }
+    
     #nav .ul .li {
         padding: 10px;
     }
     
     #nav .ul .li img {
         width: 30px !important;
+        margin-top: 10px;
     }
     
     #nav p {
@@ -338,11 +347,25 @@ body {
         background: #321;
     }
     
+    .main-section h1 {
+        margin: 30px 0;
+    }
+    
     .main-section .card {
         padding: 20px;
     }
     
     .main-section .card ul {
         padding-left: 0;
+    }
+
+    #to-top {
+        right: 10px;
+        bottom: 10px;
+    }
+    
+    #to-top img {
+        width: 25px;
+        height: 25px;
     }
 }
