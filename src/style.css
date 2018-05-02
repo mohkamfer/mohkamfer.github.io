@@ -1,0 +1,304 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#cover {
+    width: 100%;
+    height: calc(100% - 160px);
+    background-image: url("coding-min.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 160px;
+    transition: background 800ms ease;
+}
+
+#cover-reach-me {
+    color: white;
+    font-family: sans;
+    display: inline-block;
+    margin: 15px 30px;
+    padding: 8px;
+    cursor: pointer;
+    text-shadow: 0 0 25px #123;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 25px;
+    transition: text-shadow 200ms ease, background-color 200ms ease;
+}
+
+#cover-reach-me:hover {
+    text-shadow: 0 0 2px #123;
+    background-color: rgba(150, 100, 50, 100);
+}
+
+#header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#arrow {
+    width: 45px;
+    height: 45px;
+    filter: invert(1);
+    margin: 0 auto;
+    margin-bottom: calc(4.5rem + 16 * (100vw - 320px) / (400 - 2));
+    padding: 5px;
+    cursor: pointer;
+    transition: filter 200ms ease;
+    align-self: flex-end;
+}
+
+#arrow:hover {
+    filter: invert(0.7);
+}
+
+#to-top {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    margin: 25px;
+    padding: 10px;
+    background-color: #543;
+    border-radius: 45px;
+    transition: filter 200ms ease;
+    z-index: 5;
+    transition: opacity 200ms ease, visibility 200ms ease, transform 200ms ease;
+    cursor: pointer;
+}
+
+#to-top img {
+    width: 45px;
+    height: 45px;
+    filter: invert(1);
+    transform: rotate(180deg) !important;
+}
+
+#to-top:hover {
+    filter: invert(0.2);
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+#self {
+    align-self: center;
+    text-align: center;
+    color: white;
+}
+
+#name {
+    font-family: 'Nova Flat', cursive;
+    padding: 5px;
+    font-size: 600%;
+    font-weight: 700;
+    text-shadow: 0px 0px 10px #333;
+}
+
+#typer-container {
+    font-family: "Courier New";
+    text-shadow: 0px 0px 5px #000;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 100px;
+    height: 40px;
+}
+
+#nav {
+    position: absolute;
+    top: calc(100% - 160px);
+    width: 100%;
+    transition: box-shadow 500ms ease;
+    font-family: 'Nova Flat', cursive;
+}
+
+#nav .ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+#nav .ul .li img {
+    width: 50px;
+    height: 50px;
+    transition: width 500ms ease 100ms, filter 500ms ease;
+}
+
+#nav .ul .li  {
+    width: 100%;
+    transition: 300ms background-color ease, text-shadow 700ms ease, 200ms padding ease, color 400ms ease;
+    padding: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#nav .ul .li:hover img {
+    filter: invert(1);
+}
+
+#nav .ul .li:hover {
+    color: white;
+    text-shadow: 0px 0px 2px white;
+}
+
+#nav .ul .li:nth-child(1):hover {
+    background-color: #943;
+}
+
+#nav .ul .li:nth-child(2):hover {
+    background-color: #273;
+}
+
+#nav .ul .li:nth-child(3):hover {
+    background-color: #f53;
+}
+
+.sticky {
+    position: fixed !important;
+    top: 0 !important;
+    box-shadow: 0px 0px 30px black;
+    background-color: #fed;
+}
+
+.sticky .ul .li {
+    padding: 10px 0 0 0 !important;
+}
+
+.sticky .ul .li img {
+    width: 25px !important;
+}
+
+.compensate-nav {
+    margin-bottom: 90px;
+}
+
+#java-section,
+#android-section,
+#web-section,
+#contact-section {
+    height: 400px;
+    display: flex;
+    color: white;
+}
+
+#java-section h1,
+#android-section h1,
+#web-section h1,
+#contact-section h1 {
+    margin: auto auto;
+    font-family: 'Cabin', sans-serif;
+}
+
+#java-section {
+    background: linear-gradient(to bottom, #ff8d4c 20%,#cc680c 100%);
+}
+
+#android-section {
+    background: linear-gradient(to bottom, #375 20%,#142 100%);
+}
+
+#web-section {
+    background: linear-gradient(to bottom, #e52 20%,#721 100%);
+}
+
+#contact-section {
+    background: linear-gradient(to bottom, #123 20%,#abc 100%);
+}
+
+#copyrights-section {
+    background-color: #321;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-family: sans;
+}
+
+/* 
+  ##Device = Desktops
+*/
+
+@media (min-width: 1281px) {
+}
+
+/* 
+  ##Device = Laptops, Desktops
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+*/
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    #name {
+        font-size: 12vw;
+    }
+    
+    #typer-container {
+        font-size: 4vw;
+    }
+    
+    #nav ul {
+        flex-direction: column;
+    }
+    
+    #nav .ul .li img {
+        width: 30px !important;
+    }
+    
+    #nav p {
+        font-size: 10px;
+    }
+    
+    #cover {
+        margin-bottom: 142px;
+    }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #name {
+        font-size: 16vw;
+    }
+    
+    #typer-container {
+        font-size: 6vw;
+    }
+    
+    #nav .ul .li {
+        padding: 10px;
+    }
+    
+    #nav .ul .li img {
+        width: 30px !important;
+        margin-bottom: 20px;
+    }
+    
+    #nav p {
+        display: none;
+    }
+    
+    #cover {
+        margin-bottom: 90px;
+        background: #321;
+    }
+}

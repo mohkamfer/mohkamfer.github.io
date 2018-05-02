@@ -1,1 +1,72 @@
-Hello World
+<html>
+
+<head>
+    <title>Muhammad Kamal</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nova+Flat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+</head>
+
+<body>
+    <div id="cover">
+        <p id="cover-reach-me" onclick="document.querySelector('#contact-section').scrollIntoView({behavior: 'smooth'});">Reach Me</p>
+        <div id="header">
+            <div id="self">
+                <p id="name">Muhammad Kamal</p>
+                <h1 id="typer-container">I do... <br />
+                    <span class="typer" id="typer" data-words="Java Development,Android Development,Web Development" data-colors="white" data-delay="110" data-deleteDelay="1500"></span>
+                    <span class="cursor" data-owner="typer"></span>
+                </h1>
+            </div>
+            <img id="arrow" src="src/arrow.svg" alt="Down arrow" />
+        </div>
+    </div>
+
+    <div class="hidden" id="to-top" onclick="document.getElementById('cover').scrollIntoView({behavior: 'smooth'});">
+        <img src="src/arrow.svg" alt="Down arrow" />
+    </div>
+
+    <div id="nav">
+        <div class="ul">
+            <div id="java-button" class="li">
+                <img src="src/java.svg" alt="Java" />
+                <p>Java Development</p>
+            </div>
+            <div id="android-button" class="li">
+                <img src="src/android.svg" alt="Android" />
+                <p>Android Development</p>
+            </div>
+            <div id="web-button" class="li">
+                <img src="src/html5.svg" alt="HTML5" />
+                <p>Web Development</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="java-section">
+        <h1>Java Development</h1>
+    </div>
+
+    <div id="android-section">
+        <h1>Android Development</h1>
+    </div>
+
+    <div id="web-section">
+        <h1>Web Development</h1>
+    </div>
+
+    <div id="contact-section">
+        <h1>Contact me</h1>
+    </div>
+
+    <div id="copyrights-section">
+        <p>Made by me,</p>
+        <p>© 2018</p>
+    </div>
+
+    <script src="src/main.js"></script>
+    <script src="src/typer.js"></script>
+</body>
+
+</html>
