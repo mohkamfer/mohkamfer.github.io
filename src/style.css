@@ -178,6 +178,11 @@ body {
     width: 25px !important;
 }
 
+#java, #android, #web, #contact {
+    position: relative;
+    top: 120px;
+}
+
 .main-section {
     padding: 50px;
     display: flex;

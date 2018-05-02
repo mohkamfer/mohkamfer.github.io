@@ -10,9 +10,9 @@ function main() {
 document.addEventListener('DOMContentLoaded', main);
 
 function initNav() {
-    var javaSection = document.getElementById('java-section');
-    var androidSection = document.getElementById('android-section');
-    var webSection = document.getElementById('web-section');
+    var javaSection = document.getElementById('java');
+    var androidSection = document.getElementById('android');
+    var webSection = document.getElementById('web');
     
     var javaButton = document.getElementById('java-button');
     var androidButton = document.getElementById('android-button');
