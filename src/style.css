@@ -52,6 +52,7 @@ body {
     cursor: pointer;
     transition: filter 200ms ease;
     align-self: flex-end;
+    margin-bottom: calc(500px - 50vh);
 }
 
 #arrow:hover {
