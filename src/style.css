@@ -117,7 +117,7 @@ body {
     position: absolute;
     top: calc(100% - 160px);
     width: 100%;
-    transition: box-shadow 500ms ease;
+    transition: box-shadow 500ms ease, background-color 1000ms ease;
     font-family: 'Nova Flat', cursive;
     z-index: 5;
 }
