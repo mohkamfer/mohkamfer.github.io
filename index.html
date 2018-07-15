@@ -3,47 +3,36 @@
 <head>
     <title>Muhammad Kamal</title>
     <link rel="stylesheet" href="src/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Nova+Flat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nova+Flat|Cabin|Inconsolata|Ubuntu" rel="stylesheet">
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li><span href="#home">Home</span></li>
+            <li><span href="#news">News</span></li>
+            <li><span href="#contact">Contact</span></li>
+            <li id="cover-reach-me" onclick="document.querySelector('#contact').scrollIntoView({behavior: 'smooth'});" style="float:left"><span class="active" href="#about">Contact</span></li>
+        </ul>
+    </nav>
+    
     <div id="cover">
-        <button id="cover-reach-me" onclick="document.querySelector('#contact').scrollIntoView({behavior: 'smooth'});">Reach Me</button>
-        <div id="header">
-            <div id="self">
-                <p id="name">Muhammad Kamal</p>
-                <h1 id="typer-container">I do... <br />
-                    <span class="typer" id="typer" data-words="Java Development,Android Development,Web Development" data-colors="white" data-delay="110" data-deleteDelay="1500"></span>
-                    <span class="cursor" data-owner="typer"></span>
-                </h1>
-            </div>
-            <img id="arrow" src="src/arrow.svg" alt="Down arrow" />
+        <div id="self">
+            <h1>Hi, I'm Muhammad Kamal.</h1>
+            <h2>I develope Android applications and websites*</h2>
+            <h3>*: and many other stuff actually!</h3>
+            <buttons>
+                <a href="" class="button">WHAT I DO</a>
+                <a href="" class="button">WHAT I DID</a>
+            </buttons>
         </div>
     </div>
 
     <div class="hidden" id="to-top" onclick="document.getElementById('cover').scrollIntoView({behavior: 'smooth'});">
         <img src="src/arrow.svg" alt="Down arrow" />
-    </div>
-
-    <div id="nav">
-        <div class="ul">
-            <div id="java-button" class="li">
-                <img src="src/java.svg" alt="Java" />
-                <p>Java Development</p>
-            </div>
-            <div id="android-button" class="li">
-                <img src="src/android.svg" alt="Android" />
-                <p>Android Development</p>
-            </div>
-            <div id="web-button" class="li">
-                <img src="src/html5.svg" alt="HTML5" />
-                <p>Web Development</p>
-            </div>
-        </div>
     </div>
 
     <div id="java"></div>
