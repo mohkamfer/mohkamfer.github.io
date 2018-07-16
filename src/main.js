@@ -1,4 +1,4 @@
-var nav = document.getElementById('nav');
+var nav = document.getElementsByTagName('nav')[0];
 var cover = document.getElementById('cover');
 var toTop = document.getElementById('to-top');
 var doButton = document.getElementById('do');
@@ -7,6 +7,10 @@ var contactButton = document.getElementById('contact');
 var doAnchor = document.getElementById('do-a');
 var didAnchor = document.getElementById('java-a');
 var contactSection = document.getElementById('contact-section');
+
+var loginScreen = document.getElementById('login-screen');
+var userBox = document.getElementById('user-box');
+var self = document.getElementById('self');
 
 function arrowClick() {
     var end = cover.clientHeight + 1;
@@ -51,6 +55,21 @@ function initToTop() {
     
     didButton.addEventListener('click', function() {
         document.getElementById('java-a').scrollIntoView({behavior: 'smooth', block: 'start'});
+    }, false);
+    
+    userBox.addEventListener('click', function() {
+        loginScreen.classList.add('hidden');
+        setTimeout(function() {
+            loginScreen.classList.add('disappeared');
+            self.classList.remove('disappeared');
+            setTimeout(function() {
+                self.classList.remove('hidden');
+                setTimeout(function() {
+                    document.body.classList.remove('overflow-hidden');
+                    nav.classList.remove('hidden');
+                }, 400);
+            }, 200);
+        }, 600);
     }, false);
 }
 

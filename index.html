@@ -9,8 +9,8 @@
 
 </head>
 
-<body>
-    <nav>
+<body class="overflow-hidden">
+    <nav class="hidden">
         <ul>
             <li id="did"><span>What I Did</span></li>
             <li id="do"><span>What I Do</span></li>
@@ -23,15 +23,25 @@
     </nav>
     
     <div id="cover">
-        <div id="self">
+        <div id="self" class="hidden disappeared">
             {{ Site under development }}
             <h1>Hi, I'm Muhammad Kamal.</h1>
             <h2>I develop Android applications and websites*</h2>
             <h3>*: and many other stuff actually!</h3>
             <buttons>
-                <a href="" class="button">WHAT I DO</a>
-                <a href="" class="button">WHAT I DID</a>
+                <a class="button">WHAT I DO</a>
+                <a class="button">WHAT I DID</a>
             </buttons>
+        </div>
+        
+        <div id="login-screen">
+            <div id="user-box">
+                <img src="src/avatar.jpg" />
+                <span>Muhammad Kamal</span>
+            </div>
+            <div id="not-listed">
+                <p>Not listed?</p>
+            </div>
         </div>
     </div>
 
