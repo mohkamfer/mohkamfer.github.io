@@ -6,8 +6,10 @@ body {
 }
 
 nav {
-    background-color: #422422;
-    font-family: monospace;
+    background: linear-gradient(#5a564e, #413f3a);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
     position: fixed;
     width: 100%;
     box-shadow: 0 0 15px black;
@@ -15,7 +17,8 @@ nav {
 }
 
 nav ul {
-    margin: 0 2% 0 0;
+    margin: 0;
+    padding: 0 5vw;
 }
 
 nav ul li {
@@ -25,15 +28,14 @@ nav ul li {
 
 nav ul li {
     color: white;
-    padding: 15px;
+    padding: 10px 15px;
     margin: 0;
     cursor: pointer;
     transition: 200ms background-color ease;
 }
 
-nav ul li:nth-child(1),
-nav ul li:nth-child(2) {
-    border-left: 1px solid #ccc;
+nav ul li:nth-child(1) {
+    border-left: 1px solid #cccc;
 }
 
 nav ul li:hover {
