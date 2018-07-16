@@ -12,6 +12,9 @@ var loginScreen = document.getElementById('login-screen');
 var userBox = document.getElementById('user-box');
 var self = document.getElementById('self');
 
+var heroDo = document.getElementById('hero-do');
+var heroDid = document.getElementById('hero-did');
+
 function arrowClick() {
     var end = cover.clientHeight + 1;
     window.scroll({
@@ -54,6 +57,14 @@ function initToTop() {
     }, false);
     
     didButton.addEventListener('click', function() {
+        document.getElementById('java-a').scrollIntoView({behavior: 'smooth', block: 'start'});
+    }, false);
+    
+    heroDo.addEventListener('click', function() {
+        document.getElementById('do-a').scrollIntoView({behavior: 'smooth', block: 'start'});
+    }, false);
+    
+    heroDid.addEventListener('click', function() {
         document.getElementById('java-a').scrollIntoView({behavior: 'smooth', block: 'start'});
     }, false);
     
