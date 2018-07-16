@@ -3,6 +3,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 nav {
@@ -112,6 +113,32 @@ nav ul li:hover {
     text-align: center;
 }
 
+#self:after {
+    content: '';
+    width: 110%;
+    height: 100px;
+    background-color: #5a0d5a;
+    position: absolute;
+    display: block;
+    bottom: -30px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(2deg);
+}
+
+#self:before {
+    content: '';
+    width: 110%;
+    height: 100px;
+    background-color: #7a0d5a;
+    position: absolute;
+    display: block;
+    bottom: -40px;
+    left: 0;
+    z-index: -2;
+    transform: rotate(3deg);
+}
+
 #self h2 {
     margin-bottom: 50px;
 }
@@ -209,18 +236,29 @@ nav ul li:hover {
 
 .grid {
     display: flex;
-    justify-content: space-around;
     width: 80%;
 }
 
 .grid .column {
     flex: 1;
     text-align: center;
-    background-color: saddlebrown;
-    margin: 5px;
+    background-color: #2221;
+    border-radius: 15px;
+    margin: 10px;
     padding: 5px;
-    color: white;
+    color: #2228;
     font-weight: bold;
+}
+
+.column h2 {
+    margin-bottom: 50px;
+}
+
+.column img {
+    filter: invert(0.5) sepia(1) brightness(0.4) saturate(5) hue-rotate(250deg);
+    width: 100px;
+    height: 100px;
+    margin: 20px;
 }
 
 #contact-entries {
@@ -344,6 +382,10 @@ nav ul li:hover {
     
     .main-section .card ul {
         padding-left: 15px;
+    }
+    
+    #what-i-do {
+        margin-top: 50px;
     }
     
     .grid {
