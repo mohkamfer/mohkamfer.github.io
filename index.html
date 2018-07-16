@@ -10,13 +10,12 @@
 </head>
 
 <body>
-    <div id="top"></div>
     <nav>
         <ul>
-            <li><span href="#news">What I Did</span></li>
-            <li><span href="#contact">What I Do</span></li>
-            <li id="cover-reach-me"
-                onclick="document.querySelector('#contact').scrollIntoView({behavior: 'smooth'});" style="float:left"><span class="active" href="">Contact</span></li>
+            <li id="did"><span>What I Did</span></li>
+            <li id="do"><span>What I Do</span></li>
+            <li id="contact"
+                onclick="document.querySelector('#contact-a').scrollIntoView({behavior: 'smooth',block:'start'});" style="float:left"><span class="active" href="">Contact</span></li>
         </ul>
     </nav>
     
@@ -33,11 +32,11 @@
         </div>
     </div>
 
-    <div class="hidden" id="to-top" onclick="document.getElementById('top').scrollIntoView({behavior: 'smooth'});">
+    <div class="hidden" id="to-top" onclick="document.getElementById('cover').scrollIntoView({behavior: 'smooth',block:'start'});">
         <img src="src/arrow.svg" alt="Down arrow" />
     </div>
-    
-    <div id="do"></div>
+
+    <div id="do-a"></div>
     <div class="main-section" id="what-i-do">
         <h1>I do...</h1>
         <div class="grid">
@@ -56,7 +55,7 @@
         </div>
     </div>
 
-    <div id="java"></div>
+    <div id="java-a"></div>
     <div class="main-section" id="java-section">
         <h1>Java Development</h1>
         <div class="card">
@@ -79,7 +78,7 @@
         </div>
     </div>
 
-    <div id="android"></div>
+    <div id="android-a"></div>
     <div class="main-section" id="android-section">
         <h1>Android Development</h1>
         
@@ -148,12 +147,12 @@
         </div>
     </div>
 
-    <div id="web"></div>
+    <div id="web-a"></div>
     <div class="main-section" id="web-section">
         <h1>Web Development</h1>
     </div>
 
-    <div id="contact"></div>
+    <div id="contact-a"></div>
     <div class="main-section" id="contact-section">
         <h1>Contact me</h1>
         <div id="contact-entries">
