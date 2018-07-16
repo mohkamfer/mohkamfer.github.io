@@ -6,7 +6,7 @@ var didButton = document.getElementById('did');
 var contactButton = document.getElementById('contact');
 var doAnchor = document.getElementById('do-a');
 var didAnchor = document.getElementById('java-a');
-var contactAnchor = document.getElementById('contact-a');
+var contactSection = document.getElementById('contact-section');
 
 function arrowClick() {
     var end = cover.clientHeight + 1;
@@ -32,13 +32,13 @@ function initToTop() {
             doButton.classList.remove('active');
         }
         
-        if ((didAnchor.offsetTop - 200 < currentScroll) && (contactAnchor.offsetTop - 200 > currentScroll)) {
+        if ((didAnchor.offsetTop - 200 < currentScroll) && (contactSection.offsetTop - window.innerHeight / 2 > currentScroll)) {
             didButton.classList.add('active');
         } else {
             didButton.classList.remove('active');
         }
         
-        if (contactAnchor.offsetTop - 200 < currentScroll) {
+        if (contactSection.offsetTop - window.innerHeight / 2 < currentScroll) {
             contactButton.classList.add('active');
         } else {
             contactButton.classList.remove('active');

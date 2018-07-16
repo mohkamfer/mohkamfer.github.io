@@ -14,6 +14,7 @@ nav {
     width: 100%;
     box-shadow: 0 0 15px black;
     z-index: 5;
+    user-select: none;
 }
 
 nav ul {
@@ -22,7 +23,7 @@ nav ul {
 }
 
 nav ul li {
-    color: #eee;
+    color: #fff;
     padding: 10px 15px;
     margin: 0;
     cursor: pointer;
@@ -36,9 +37,9 @@ nav ul li:after {
     position: relative;
     display: block;
     width: 0%;
-    height: 4px;
-    bottom: -12px;
-    background-color: orange;
+    height: 2px;
+    bottom: -10px;
+    background-color: #e03901;
     margin: 0 auto;
     transition: 200ms width ease;
 }
@@ -47,13 +48,8 @@ nav ul li.active:after {
     width: 100%;
 }
 
-nav ul li:nth-child(1) {
-    border-left: 1px solid #cccc;
-}
-
 nav ul li:hover {
-    color: #fff;
-    box-shadow: inset 0 0 2px 1px white;
+    box-shadow: inset 0 0 0px 1px #e03901;
 }
 
 #cover {
@@ -152,21 +148,20 @@ nav ul li:hover {
 .button {
     color: white;
     text-decoration: none;
-    background-color: #cc4000;
+    background-color: #ffffff00;
     outline: 0;
     padding: 15px 30px;
     margin: 30px;
     border-radius: 7px;
-    box-shadow: 1px 1px 5px;
+    box-shadow: 0 0 5px 1px #e03901;
     transition: 200ms all ease;
     letter-spacing: 1px;
 }
 
 .button:hover {
-    color: black;
-    background-color: white;
-    box-shadow: 0 0 20px white;
-    text-shadow: 1px 1px black;
+    background-color: #e03901;
+    box-shadow: 0 0 5px white;
+    text-shadow: 1px 1px white;
 }
 
 .button:active {

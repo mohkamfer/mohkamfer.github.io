@@ -15,7 +15,10 @@
             <li id="did"><span>What I Did</span></li>
             <li id="do"><span>What I Do</span></li>
             <li id="contact"
-                onclick="document.querySelector('#contact-a').scrollIntoView({behavior: 'smooth',block:'start'});" style="float:left"><span class="active" href="">Contact</span></li>
+                onclick="document.querySelector('#contact-section')
+                         .scrollIntoView({behavior: 'smooth',block:'start'});" style="float:left">
+                <span class="active" href="">Contact</span>
+            </li>
         </ul>
     </nav>
     
@@ -152,7 +155,6 @@
         <h1>Web Development</h1>
     </div>
 
-    <div id="contact-a"></div>
     <div class="main-section" id="contact-section">
         <h1>Contact me</h1>
         <div id="contact-entries">
