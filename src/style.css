@@ -362,6 +362,22 @@ nav ul li:hover {
     font-family: 'Cabin', sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: #303901; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a03901; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #e03901; 
+}
+
 /* 
   ##Device = Desktops
 */
