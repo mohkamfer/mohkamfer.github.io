@@ -56,6 +56,7 @@ nav ul li:hover {
     right: 10%;
     font-size: 10px;
     transition: 200ms font-size ease;
+    -webkit-font-smoothing: antialiased;
 }
 
 #to-top {
@@ -140,11 +141,6 @@ nav ul li:hover {
     color: black;
 }
 
-#java, #android, #web, #contact {
-    position: relative;
-    top: 120px;
-}
-
 .main-section {
     padding: 50px;
     display: flex;
@@ -205,6 +201,26 @@ nav ul li:hover {
 
 #contact-section {
     background: linear-gradient(to bottom, #123 20%,#321 100%);
+}
+
+#what-i-do {
+    color: 5a0d5a;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.grid .column {
+    flex: 1;
+    text-align: center;
+    background-color: saddlebrown;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
 }
 
 #contact-entries {
@@ -280,8 +296,22 @@ nav ul li:hover {
         padding-left: 5px;
     }
     
+    .grid {
+        width: 90%;
+    }
+    
     .contact-entry {
         margin: 20px !important;
+    }
+}
+
+/* 
+  ##Between phones and tablets
+*/
+
+@media (max-width: 768px) {
+    .grid {
+        flex-direction: column;
     }
 }
 
@@ -292,7 +322,8 @@ nav ul li:hover {
 @media (min-width: 320px) and (max-width: 480px) {
     .button {
         font-size: 12px;
-        margin: 20px;
+        margin: 10px;
+        padding: 15px;
     }
     
     #cover h3 {
@@ -313,6 +344,10 @@ nav ul li:hover {
     
     .main-section .card ul {
         padding-left: 15px;
+    }
+    
+    .grid {
+        width: 100%;
     }
 
     #to-top {
