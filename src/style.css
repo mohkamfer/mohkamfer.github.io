@@ -3,7 +3,6 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
 }
 
 nav {
@@ -44,10 +43,21 @@ nav ul li:hover {
 
 #cover {
     width: 100%;
-    height: 100%;
-    background-color: #5a0d5a;
-    transition: background 800ms ease;
+    height: 110%;
+    background-color: #5a0d4a;
     display: flex;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 91%);
+}
+
+#cover:after {
+    content: '';
+    width: 100%;
+    height: 100px;
+    background-color: #3a0d4f;
+    display: block;
+    position: absolute;
+    bottom: -100px;
+    clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 20%);
 }
 
 #cover h3 {
@@ -103,44 +113,25 @@ nav ul li:hover {
 }
 
 #self {
-    margin: auto;
-    padding: 10px;
+    width: 100%;
+    padding: 0px;
     color: white;
     font-family: 'Ubuntu', sans-serif;
     text-shadow: 0px 0px 10px #333;
     display: flex;
     flex-direction: column;
     text-align: center;
-}
-
-#self:after {
-    content: '';
-    width: 110%;
-    height: 100px;
-    background-color: #5a0d5a;
-    position: absolute;
-    display: block;
-    bottom: -30px;
-    left: 0;
-    z-index: -1;
-    transform: rotate(2deg);
-}
-
-#self:before {
-    content: '';
-    width: 110%;
-    height: 100px;
-    background-color: #7a0d5a;
-    position: absolute;
-    display: block;
-    bottom: -40px;
-    left: 0;
-    z-index: -2;
-    transform: rotate(3deg);
+    justify-content: center;
+    margin-top: -5%
 }
 
 #self h2 {
     margin-bottom: 50px;
+}
+
+#self h1,
+#self h2 {
+    padding: 10px;
 }
 
 .button {
