@@ -7,6 +7,8 @@ body {
 
 .overflow-hidden {
     overflow: hidden;
+    position: relative;
+    background-color: #2c011e;
 }
 
 nav {
@@ -168,7 +170,7 @@ nav ul li:hover {
 
 #login-label {
     position: absolute;
-    top: 5%;
+    top: 50px;
     font-weight: bold;
 }
 
