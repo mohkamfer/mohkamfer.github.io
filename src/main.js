@@ -1,3 +1,5 @@
+var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+
 var nav = document.getElementsByTagName('nav')[0];
 var cover = document.getElementById('cover');
 var toTop = document.getElementById('to-top');
@@ -78,6 +80,7 @@ function initToTop() {
                 setTimeout(function() {
                     document.body.classList.remove('overflow-hidden');
                     document.documentElement.classList.remove('overflow-hidden');
+                    enableScroll();
                     nav.classList.remove('hidden');
                 }, 400);
             }, 200);
@@ -88,5 +91,38 @@ function initToTop() {
 function main() {
     initToTop();
     document.getElementById('arrow').addEventListener('click', arrowClick);
+    disableScroll();
 }
 document.addEventListener('DOMContentLoaded', main);
+
+function preventDefault(e) {
+  e = e || window.event;
+  if (e.preventDefault)
+      e.preventDefault();
+  e.returnValue = false;  
+}
+
+function preventDefaultForScrollKeys(e) {
+    if (keys[e.keyCode]) {
+        preventDefault(e);
+        return false;
+    }
+}
+
+function disableScroll() {
+  if (window.addEventListener) // older FF
+      window.addEventListener('DOMMouseScroll', preventDefault, false);
+  window.onwheel = preventDefault; // modern standard
+  window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+  window.ontouchmove  = preventDefault; // mobile
+  document.onkeydown  = preventDefaultForScrollKeys;
+}
+
+function enableScroll() {
+    if (window.removeEventListener)
+        window.removeEventListener('DOMMouseScroll', preventDefault, false);
+    window.onmousewheel = document.onmousewheel = null; 
+    window.onwheel = null; 
+    window.ontouchmove = null;  
+    document.onkeydown = null;  
+}
