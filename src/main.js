@@ -77,6 +77,7 @@ function initToTop() {
                 self.classList.remove('hidden');
                 setTimeout(function() {
                     document.body.classList.remove('overflow-hidden');
+                    document.documentElement.classList.remove('overflow-hidden');
                     nav.classList.remove('hidden');
                 }, 400);
             }, 200);
