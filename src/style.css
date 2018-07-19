@@ -166,6 +166,12 @@ nav ul li:hover {
         400ms visibility ease;
 }
 
+#login-label {
+    position: absolute;
+    top: 5%;
+    font-weight: bold;
+}
+
 #login-screen #not-listed {
     color: #aaa;
     min-width: 300px;
@@ -181,6 +187,7 @@ nav ul li:hover {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 #user-box:hover {
@@ -192,7 +199,7 @@ nav ul li:hover {
     height: 76px;
     padding: 1px;
     margin-right: 30px;
-    border: 1px solid #aaa;
+    border: 2px solid #aaa;
     border-radius: 5px;
 }
 
