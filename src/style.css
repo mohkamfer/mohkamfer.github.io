@@ -140,9 +140,14 @@ nav ul li:hover {
     display: none !important;
 }
 
+.overlaying {
+    position: fixed;
+    z-index: 100;
+}
+
 #self {
     width: 100%;
-    padding: 0px;
+    padding: 0;
     color: white;
     font-family: 'Ubuntu', sans-serif;
     text-shadow: 0px 0px 10px #333;

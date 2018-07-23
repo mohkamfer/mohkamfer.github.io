@@ -79,6 +79,7 @@ function initToTop() {
                     document.body.classList.remove('overflow-hidden');
                     document.documentElement.classList.remove('overflow-hidden');
                     nav.classList.remove('hidden');
+                    cover.classList.remove('overlaying');
                 }, 400);
             }, 200);
         }, 600);
