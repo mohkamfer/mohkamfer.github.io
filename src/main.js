@@ -83,6 +83,7 @@ function initToTop() {
                     enableScroll();
                     nav.classList.remove('hidden');
                     cover.classList.remove('overlaying');
+                    window.scrollTo(0, 0);
                 }, 400);
             }, 200);
         }, 600);
