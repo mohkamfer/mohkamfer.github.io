@@ -15,7 +15,7 @@ var userBox = document.getElementById('user-box');
 var self = document.getElementById('self');
 
 var heroDo = document.getElementById('hero-do');
-var heroDid = document.getElementById('hero-did');
+var heroHello = document.getElementById('hero-hello');
 
 function arrowClick() {
     var end = cover.clientHeight + 1;
@@ -66,8 +66,8 @@ function initToTop() {
         document.getElementById('do-a').scrollIntoView({behavior: 'smooth', block: 'start'});
     }, false);
     
-    heroDid.addEventListener('click', function() {
-        document.getElementById('java-a').scrollIntoView({behavior: 'smooth', block: 'start'});
+    heroHello.addEventListener('click', function() {
+        document.getElementById('contact-section').scrollIntoView({behavior: 'smooth', block: 'start'});
     }, false);
     
     userBox.addEventListener('click', function() {
