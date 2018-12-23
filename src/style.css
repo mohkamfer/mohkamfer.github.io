@@ -168,7 +168,6 @@ nav ul li:hover {
     align-items: center;
     flex-direction: column;
     margin: auto;
-    cursor: ;
     transition: 400ms opacity ease,
         400ms visibility ease;
 }
@@ -251,7 +250,7 @@ nav ul li:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: monospace;
+    font-family: sans-serif;
 }
 
 .main-section h1 {
@@ -313,17 +312,24 @@ nav ul li:hover {
 .grid {
     display: flex;
     width: 80%;
+    background-color: #eeeeff22;
+    border-radius: 15px;
+    padding: 10px;
+    font-family: "Ubuntu", sans-serif;
+    color: #000000;
+    margin: 10px;
+    box-shadow: 0 5px 20px #44444477;
 }
 
 .grid .column {
     flex: 1;
     text-align: center;
-    background-color: #2221;
-    border-radius: 15px;
     margin: 10px;
-    padding: 5px;
-    color: #222c;
-    font-weight: bold;
+    padding: 15px;
+}
+
+.grid .column p {
+    padding: 10px;
 }
 
 .column h2 {
@@ -335,6 +341,13 @@ nav ul li:hover {
     width: 100px;
     height: 100px;
     margin: 20px;
+}
+
+.grid-divider {
+    background-color: #aaaaaa66;
+    height: 300px;
+    width: 2px;
+    align-self: center;
 }
 
 #contact-entries {
@@ -442,6 +455,10 @@ nav ul li:hover {
 @media (max-width: 768px) {
     .grid {
         flex-direction: column;
+    }
+
+    .grid-divider {
+        display: none;
     }
 }
 
