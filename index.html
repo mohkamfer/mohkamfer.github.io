@@ -1,229 +1,239 @@
 <html class="overflow-hidden">
 
 <head>
-    <title>Muhammad Kamal</title>
-    <link rel="stylesheet" href="src/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Nova+Flat|Cabin|Inconsolata|Ubuntu" rel="stylesheet">
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#2c011e">
-    <meta name="msapplication-TileColor" content="#2c011e">
-    <meta name="msapplication-navbutton-color" content="#2c011e">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#2c011e">
+  <title>Muhammad Kamal</title>
+  <link rel="stylesheet" href="src/css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Nova+Flat|Cabin|Inconsolata|Ubuntu" rel="stylesheet">
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2c011e">
+  <meta name="msapplication-TileColor" content="#2c011e">
+  <meta name="msapplication-navbutton-color" content="#2c011e">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#2c011e">
 </head>
 
 <body class="overflow-hidden">
-    <nav class="hidden">
-        <ul>
-            <li id="did"><span>What I Did</span></li>
-            <li id="do"><span>What I Do</span></li>
-            <li id="contact"
-                onclick="document.querySelector('#contact-section')
-                         .scrollIntoView({behavior: 'smooth',block:'start'});" style="float:left">
-                <span class="active" href="">Contact</span>
-            </li>
-        </ul>
-    </nav>
-    
-    <div id="cover" class="overlaying">
-        <div id="self" class="hidden disappeared">
-            {{ Site under development }}
-            <h1>Hi, I'm Muhammad Kamal.</h1>
-            <h2>I develop Android applications and websites*</h2>
-            <h3>*: and many other stuff actually!</h3>
-            <buttons>
-                <a id="hero-hello" class="button">SAY HELLO</a>
-                <a id="hero-do" class="button">WHAT I DO</a>
-            </buttons>
-        </div>
-        
-        <div id="login-screen">
-            <p id="login-label">User Login</p>
-            <p id="need-help">Help?</p>
-            <p id="help-box">
-                This is the login screen of Ubuntu OS starting from 17.10.
-                You basically start the login process by clicking on a username.
-                <br />In our case logging in simply and aesthetically mean accessing the site.
-            </p>
-            <div id="user-box">
-                <img src="src/avatar.jpg" />
-                <span>Muhammad Kamal</span>
-            </div>
-            <div id="not-listed">
-                <p>Not listed?</p>
-            </div>
-        </div>
+  <nav class="hidden">
+    <ul>
+      <li id="did"><span>What I Did</span></li>
+      <li id="do"><span>What I Do</span></li>
+      <li id="contact" onclick="document.querySelector('#contact-section')
+                         .scrollIntoView({behavior: 'smooth',block:'start'});"
+        style="float:left">
+        <span class="active" href="">Contact</span>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="cover" class="overlaying">
+    <div id="self" class="hidden disappeared">
+      {{ Site under development }}
+      <h1>Hi, I'm Muhammad Kamal.</h1>
+      <h2>I develop Android applications and websites*</h2>
+      <h3>*: and many other stuff actually!</h3>
+      <buttons>
+        <a id="hero-hello" class="button">SAY HELLO</a>
+        <a id="hero-do" class="button">WHAT I DO</a>
+      </buttons>
     </div>
 
-    <div class="hidden" id="to-top" onclick="document.getElementById('cover').scrollIntoView({behavior: 'smooth',block:'start'});">
-        <img src="src/arrow.svg" alt="Down arrow" />
+    <div id="login-screen">
+      <p id="login-label">User Login</p>
+      <p id="need-help">Help?</p>
+      <p id="help-box">
+        This is the login screen of Ubuntu OS starting from 17.10.
+        You basically start the login process by clicking on a username.
+        <br />In our case logging in simply and aesthetically mean accessing the site.
+      </p>
+      <div id="user-box">
+        <img src="src/img/avatar.jpg" />
+        <span>Muhammad Kamal</span>
+      </div>
+      <div id="not-listed">
+        <p>Not listed?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="hidden" id="to-top" onclick="document.getElementById('cover').scrollIntoView({behavior: 'smooth',block:'start'});">
+    <img src="src/img/arrow.svg" alt="Down arrow" />
+  </div>
+
+  <div id="do-a"></div>
+  <div class="main-section" id="what-i-do">
+    <h1>What I do...</h1>
+    <div class="grid">
+      <div class="column android">
+        <img src="src/img/android.svg" />
+        <h2>Android Applications</h2>
+        <p>Fair exposure to Android SDK enables me to turn ideas into an application.</p>
+      </div>
+      <div class="grid-divider"></div>
+      <div class="column website">
+        <img src="src/img/html5.svg" />
+        <h2>Web Development</h2>
+        <p>Considering it as a best hobby when not developing apps, I've been through a lot of web projects enough to
+          make an entire website.</p>
+      </div>
+      <div class="grid-divider"></div>
+      <div class="column software">
+        <img src="src/img/file-code-regular.svg" />
+        <h2>Software Development</h2>
+        <p>When not doing these two, I program or script anything that is challenging enough to stimulate my
+          curiousity!</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="java-a"></div>
+  <div class="main-section" id="java-section">
+    <h1>Java Development</h1>
+    <div class="card">
+      <h2>HTMLParser</h2>
+      <h3>Overview</h3>
+      <h4>A personal project with the purpose of parsing DOM objects from a given string. It analyzes the document's
+        children, along with each child's children until the end to construct the complete tree that is ready for user
+        interaction.</h4>
+      <h3>Highlights</h3>
+      <ul>
+        <li>Parse HTML, XML (RSS), supports MATH documents.</li>
+        <li>Get children by ID, classes and/or tags.</li>
+        <li>Able to capture CDATA sections.</li>
+      </ul>
+      <h3>Technologies / Languages</h3>
+      <ul>
+        <li>Pure Java</li>
+      </ul>
+      <h3>Material / Resources</h3>
+      <h4><a target="_blank" href="https://gist.github.com/mohkamfer/3c6a4e6ba9a9faead6f895a27519b816">Public Gist</a><br />
+        Used as a building block for some of the Android projects listed below.</h4>
+    </div>
+  </div>
+
+  <div id="android-a"></div>
+  <div class="main-section" id="android-section">
+    <h1>Android Development</h1>
+
+    <div class="card">
+      <h2>MUST Student (Unofficial)</h2>
+      <h3>Overview</h3>
+      <h4>A personal application project that facilitates browsing the students zone on Misr University for Science and
+        Technology's website for students. It is still currently under early development. The application provides a
+        range of useful features not actually present in the current official MUST portal application and is in no way
+        associated with the university in any legal or financial way.</h4>
+      <h3>Highlights (Current or planned)</h3>
+      <ul>
+        <li>Browse the students zone offline</li>
+        <li>Add multiple accounts and track their data. (Must be authenticated!)</li>
+        <li>Register courses from the application</li>
+      </ul>
+      <h3>Technologies / Languages</h3>
+      <ul>
+        <li>Java</li>
+        <li>Android SDK</li>
+        <li>Firebase Job Dispatcher</li>
+        <li>Firebase Analytics</li>
+        <li>AdMob (Donation)</li>
+        <li>HTMLParser (Own project)</li>
+      </ul>
+      <h3>Material / Resources</h3>
+      <h4><sub>Soon</sub></h4>
     </div>
 
-    <div id="do-a"></div>
-    <div class="main-section" id="what-i-do">
-        <h1>What I do...</h1>
-        <div class="grid">
-            <div class="column android">
-                <img src="src/android.svg" />
-                <h2>Android Applications</h2>
-                <p>Fair exposure to Android SDK enables me to turn ideas into an application.</p>
-            </div>
-            <div class="grid-divider"></div>
-            <div class="column website">
-                <img src="src/html5.svg" />
-                <h2>Web Development</h2>
-                <p>Considering it as a best hobby when not developing apps, I've been through a lot of web projects enough to make an entire website.</p>
-            </div>
-            <div class="grid-divider"></div>
-            <div class="column software">
-                <img src="src/file-code-regular.svg" />
-                <h2>Software Development</h2>
-                <p>When not doing these two, I program or script anything that is challenging enough to stimulate my curiousity!</p>
-            </div>
+    <div class="card">
+      <h2>Feed Recess</h2>
+      <h3>Overview</h3>
+      <h4>The graduation project developed for the Udacity's Android Developer Nanodegree course by Google. The main
+        point of the application is to allow users to fetch news and articles from their favorite RSS feeds, and
+        display them in various ways such as in a homescreen widget.</h4>
+      <h3>Highlights</h3>
+      <ul>
+        <li>Parse &lt;rss&gt; documents (&lt;feed&gt; documents not supported [yet])</li>
+        <li>Fetch data automatically in the background</li>
+        <li>Aggregate feeds into a single multi-feed</li>
+        <li>Separate in-app view from the widget view (in terms of aggregated view)</li>
+      </ul>
+      <h3>Technologies / Languages</h3>
+      <ul>
+        <li>Java</li>
+        <li>Android SDK</li>
+        <li>Firebase Job Dispatcher</li>
+        <li>Firebase Analytics</li>
+        <li>HTMLParser (Own project)</li>
+      </ul>
+      <h3>Material / Resources</h3>
+      <h4><sub>Soon</sub></h4>
+    </div>
+
+    <div class="card">
+      <h2>CGR Toolkit</h2>
+      <h3>Overview</h3>
+      <h4>A small application to help in Chaos Game Representation (CGR) encoding and decoding, along with integer
+        encoding and decoding algorithms. The application allows viewing the steps for both encoding and decoding for
+        each iteration, and also plotting graphs. </h4>
+      <h3>Highlights</h3>
+      <ul>
+        <li>Encode sequences with normal CGR and integer CGR.</li>
+        <li>Plot graphs for both techniques.</li>
+      </ul>
+      <h3>Technologies / Languages</h3>
+      <ul>
+        <li>Java</li>
+        <li>Android SDK, no plugins.</li>
+      </ul>
+      <h3>Material / Resources</h3>
+      <h4><sub><a href="https://github.com/mohkamfer/iCGR-Toolkit">GitHub Repository</a></sub></h4>
+    </div>
+  </div>
+
+  <div id="web-a"></div>
+  <div class="main-section" id="web-section">
+    <h1>Web Development</h1>
+  </div>
+
+  <div class="main-section" id="contact-section">
+    <h1>Contact me</h1>
+    <div id="contact-entries">
+      <a target="_blank" href="https://fb.com/mi550" title="Facebook">
+        <div class="contact-entry">
+          <img src="src/img/facebook.svg" alt="Facebook" />
         </div>
-    </div>
+      </a>
 
-    <div id="java-a"></div>
-    <div class="main-section" id="java-section">
-        <h1>Java Development</h1>
-        <div class="card">
-            <h2>HTMLParser</h2>
-            <h3>Overview</h3>
-            <h4>A personal project with the purpose of parsing DOM objects from a given string. It analyzes the document's children, along with each child's children until the end to construct the complete tree that is ready for user interaction.</h4>
-            <h3>Highlights</h3>
-            <ul>
-                <li>Parse HTML, XML (RSS), supports MATH documents.</li>
-                <li>Get children by ID, classes and/or tags.</li>
-                <li>Able to capture CDATA sections.</li>
-            </ul>
-            <h3>Technologies / Languages</h3>
-            <ul>
-                <li>Pure Java</li>
-            </ul>
-            <h3>Material / Resources</h3>
-            <h4><a target="_blank" href="https://gist.github.com/mohkamfer/3c6a4e6ba9a9faead6f895a27519b816">Public Gist</a><br />
-            Used as a building block for some of the Android projects listed below.</h4>
+      <a target="_blank" href="https://github.com/mohkamfer" title="GitHub">
+        <div class="contact-entry">
+          <img src="src/img/github.svg" alt="Github" />
         </div>
-    </div>
+      </a>
 
-    <div id="android-a"></div>
-    <div class="main-section" id="android-section">
-        <h1>Android Development</h1>
-        
-        <div class="card">
-            <h2>MUST Student (Unofficial)</h2>
-            <h3>Overview</h3>
-            <h4>A personal application project that facilitates browsing the students zone on Misr University for Science and Technology's website for students. It is still currently under early development. The application provides a range of useful features not actually present in the current official MUST portal application and is in no way associated with the university in any legal or financial way.</h4>
-            <h3>Highlights (Current or planned)</h3>
-            <ul>
-                <li>Browse the students zone offline</li>
-                <li>Add multiple accounts and track their data. (Must be authenticated!)</li>
-                <li>Register courses from the application</li>
-            </ul>
-            <h3>Technologies / Languages</h3>
-            <ul>
-                <li>Java</li>
-                <li>Android SDK</li>
-                <li>Firebase Job Dispatcher</li>
-                <li>Firebase Analytics</li>
-                <li>AdMob (Donation)</li>
-                <li>HTMLParser (Own project)</li>
-            </ul>
-            <h3>Material / Resources</h3>
-            <h4><sub>Soon</sub></h4>
+      <a target="_blank" href="https://api.whatsapp.com/send?phone=201116645834" title="WhatsApp / Mobile">
+        <div class="contact-entry">
+          <img src="src/img/whatsapp.svg" alt="WhatsApp / Mobile" />
         </div>
-        
-        <div class="card">
-            <h2>Feed Recess</h2>
-            <h3>Overview</h3>
-            <h4>The graduation project developed for the Udacity's Android Developer Nanodegree course by Google. The main point of the application is to allow users to fetch news and articles from their favorite RSS feeds, and display them in various ways such as in a homescreen widget.</h4>
-            <h3>Highlights</h3>
-            <ul>
-                <li>Parse &lt;rss&gt; documents (&lt;feed&gt; documents not supported [yet])</li>
-                <li>Fetch data automatically in the background</li>
-                <li>Aggregate feeds into a single multi-feed</li>
-                <li>Separate in-app view from the widget view (in terms of aggregated view)</li>
-            </ul>
-            <h3>Technologies / Languages</h3>
-            <ul>
-                <li>Java</li>
-                <li>Android SDK</li>
-                <li>Firebase Job Dispatcher</li>
-                <li>Firebase Analytics</li>
-                <li>HTMLParser (Own project)</li>
-            </ul>
-            <h3>Material / Resources</h3>
-            <h4><sub>Soon</sub></h4>
+      </a>
+
+      <a target="_blank" href="https://plus.google.com/u/0/114732808540554462647" title="Google Plus">
+        <div class="contact-entry">
+          <img src="src/img/google-plus.svg" alt="Google Plus" />
         </div>
-        
-        <div class="card">
-            <h2>CGR Toolkit</h2>
-            <h3>Overview</h3>
-            <h4>A small application to help in Chaos Game Representation (CGR) encoding and decoding, along with integer encoding and decoding algorithms. The application allows viewing the steps for both encoding and decoding for each iteration, and also plotting graphs. </h4>
-            <h3>Highlights</h3>
-            <ul>
-                <li>Encode sequences with normal CGR and integer CGR.</li>
-                <li>Plot graphs for both techniques.</li>
-            </ul>
-            <h3>Technologies / Languages</h3>
-            <ul>
-                <li>Java</li>
-                <li>Android SDK, no plugins.</li>
-            </ul>
-            <h3>Material / Resources</h3>
-            <h4><sub><a href="https://github.com/mohkamfer/iCGR-Toolkit">GitHub Repository</a></sub></h4>
+      </a>
+
+      <a target="_blank" href="mailto:mohammedkamalfergany@yahoo.com" title="Email">
+        <div class="contact-entry">
+          <img src="src/img/at.svg" alt="Email" />
         </div>
+      </a>
     </div>
+  </div>
 
-    <div id="web-a"></div>
-    <div class="main-section" id="web-section">
-        <h1>Web Development</h1>
-    </div>
+  <div id="copyrights-section">
+    <img style="width: 30px;filter:invert(1);" src="src/img/code.svg" alt="Code" />
+    <br />
+    <p>Made by me</p>
+    <p>© 2018</p>
+  </div>
 
-    <div class="main-section" id="contact-section">
-        <h1>Contact me</h1>
-        <div id="contact-entries">
-            <a target="_blank" href="https://fb.com/mi550" title="Facebook">
-                <div class="contact-entry">
-                    <img src="src/facebook.svg" alt="Facebook" />
-                </div>
-            </a>
-
-            <a target="_blank" href="https://github.com/mohkamfer" title="GitHub">
-                <div class="contact-entry">
-                    <img src="src/github.svg" alt="Github" />
-                </div>
-            </a>
-            
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=201116645834" title="WhatsApp / Mobile">
-                <div class="contact-entry">
-                    <img src="src/whatsapp.svg" alt="WhatsApp / Mobile" />
-                </div>
-            </a>
-            
-            <a target="_blank" href="https://plus.google.com/u/0/114732808540554462647" title="Google Plus">
-                <div class="contact-entry">
-                    <img src="src/google-plus.svg" alt="Google Plus" />
-                </div>
-            </a>
-            
-            <a target="_blank" href="mailto:mohammedkamalfergany@yahoo.com" title="Email">
-                <div class="contact-entry">
-                    <img src="src/at.svg" alt="Email" />
-                </div>
-            </a>
-        </div>
-    </div>
-
-    <div id="copyrights-section">
-        <img style="width: 30px;filter:invert(1);" src="src/code.svg" alt="Code" />
-        <br />
-        <p>Made by me</p>
-        <p>© 2018</p>
-    </div>
-
-    <script src="src/main.js"></script>
-    <script src="src/typer.js"></script>
+  <script src="src/js/main.js"></script>
 </body>
 
 </html>
