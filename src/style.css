@@ -178,6 +178,45 @@ nav ul li:hover {
     font-weight: bold;
 }
 
+#need-help {
+    position: absolute;
+    top: 100px;
+    padding: 0 8px 8px;
+    font-style: italic;
+    font-size: small;
+    user-select: none;
+    cursor: pointer;
+    transition: 200ms all ease;
+}
+
+#help-box {
+    user-select: none;
+    background-color: lightyellow;
+    color: black;
+    width: 260px;
+    padding: 14px;
+    border-radius: 8px;
+    position: absolute;
+    top: 120px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 200ms all ease;
+}
+
+#need-help:hover {
+    text-shadow: 0 0 5px white;
+}
+
+#need-help:hover + #help-box {
+    opacity: 1;
+    visibility: visible;
+}
+
+#help-box:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
 #login-screen #not-listed {
     color: #aaa;
     min-width: 300px;
