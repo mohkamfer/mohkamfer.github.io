@@ -494,10 +494,12 @@ nav ul li:hover {
 @media (max-width: 768px) {
   .grid {
     flex-direction: column;
+    width: 95% !important;
   }
 
   .grid-divider {
-    display: none;
+    width: 90%;
+    height: 2px;
   }
 }
 
