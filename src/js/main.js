@@ -71,6 +71,7 @@ function initToTop() {
   }, false);
 
   userBox.addEventListener('click', function () {
+    var timeFactor = 50;
     loginScreen.classList.add('hidden');
     setTimeout(function () {
       loginScreen.classList.add('disappeared');
@@ -84,9 +85,9 @@ function initToTop() {
           nav.classList.remove('hidden');
           cover.classList.remove('overlaying');
           window.scrollTo(0, 0);
-        }, 400);
-      }, 200);
-    }, 600);
+        }, timeFactor * 2);
+      }, timeFactor);
+    }, timeFactor * 3/2);
   }, false);
 }
 
