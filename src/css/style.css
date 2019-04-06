@@ -289,7 +289,7 @@ nav ul li:hover {
 .main-section h1 {
   font-family: 'Cabin', sans-serif;
   margin: 70px;
-  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+  text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
   -webkit-font-smoothing: antialiased;
   letter-spacing: 1px;
 }
@@ -323,15 +323,15 @@ nav ul li:hover {
 }
 
 #java-section {
-  background: linear-gradient(to bottom, #ff8d4c 20%,#cc680c 100%);
+  background: linear-gradient(to bottom, #ff8d4c 20%, #cc680c 100%);
 }
 
 #android-section {
-  background: linear-gradient(to bottom, #375 20%,#142 100%);
+  background: linear-gradient(to bottom, #375 20%, #142 100%);
 }
 
 #web-section {
-  background: linear-gradient(to bottom, #e52 20%,#721 100%);
+  background: linear-gradient(to bottom, #e52 20%, #721 100%);
 }
 
 #contact-section {
@@ -346,7 +346,7 @@ nav ul li:hover {
   display: flex;
   width: 80%;
   background-color: #eeeeff22;
-  border-radius: 15px;
+  border-radius: 5px;
   padding: 10px;
   font-family: "Ubuntu", sans-serif;
   color: #000000;
@@ -384,11 +384,15 @@ nav ul li:hover {
 
 .column ul li {
   padding: 4px 0;
+  border-radius: 16px;
 }
 
 .column ul li:nth-child(2n + 1) {
   background-color: rgb(235, 226, 243);
-  border-radius: 16px;
+}
+
+.column ul li:nth-child(2n) {
+  background-color: rgba(235, 226, 243, 0.2);
 }
 
 .grid-divider {
@@ -442,37 +446,34 @@ nav ul li:hover {
 }
 
 ::-webkit-scrollbar-track {
-  background: #303901; 
+  background: #303901;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #a03901; 
+  background: #a03901;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #e03901; 
+  background: #e03901;
 }
 
 /* 
   ##Device = Desktops
 */
 
-@media (min-width: 1281px) {
-}
+@media (min-width: 1281px) {}
 
 /* 
   ##Device = Laptops, Desktops
 */
 
-@media (min-width: 1025px) and (max-width: 1280px) {
-}
+@media (min-width: 1025px) and (max-width: 1280px) {}
 
 /* 
   ##Device = Tablets, Ipads (portrait)
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
-}
+@media (min-width: 768px) and (max-width: 1024px) {}
 
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
@@ -482,15 +483,15 @@ nav ul li:hover {
   .main-section h1 {
     margin: 40px;
   }
-  
+
   .main-section .card ul {
     padding-left: 5px;
   }
-  
+
   .grid {
     width: 90%;
   }
-  
+
   .contact-entry {
     margin: 7px !important;
   }
@@ -522,31 +523,31 @@ nav ul li:hover {
     margin: 10px;
     padding: 15px;
   }
-  
+
   #cover h4 {
     font-size: 8px;
   }
-  
+
   .main-section {
     padding: 10px;
   }
-  
+
   .main-section h1 {
     margin: 30px 0;
   }
-  
+
   .main-section .card {
     padding: 20px;
   }
-  
+
   .main-section .card ul {
     padding-left: 15px;
   }
-  
+
   #what-i-do {
     margin-top: 50px;
   }
-  
+
   .grid {
     width: 100%;
   }
@@ -555,12 +556,12 @@ nav ul li:hover {
     right: 10px;
     bottom: 10px;
   }
-  
+
   #to-top img {
     width: 25px;
     height: 25px;
   }
-  
+
   .contact-entry {
     margin: 5px 5px !important;
     padding: 10px !important;
